@@ -19,10 +19,10 @@ Template.createTask.events({
       title: titleValue,
       description: descriptionValue
     });
-
-    event.preventDefault();
+    // get id to use for route
+    var id = this._id;
     //redirect user to dashboard
-    Router.go('/dashboard');
+    Router.go('/dashboard/view?id=' + id);
   }
 });
 

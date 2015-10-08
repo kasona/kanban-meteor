@@ -11,6 +11,7 @@ Router.route('/', function () {
 
 // ============ Dashboard ================
 Router.route('/dashboard', function() {
+  //
   this.render('dashboard');
 });
 
@@ -24,7 +25,12 @@ Router.route('/profile/edit', function() {
   this.render('editProfile');
 });
 
-// ===========tasks/new =================
+// =========== tasks/new =================
 Router.route('/tasks/new', function() {
   this.render('createTask');
 });
+
+// // =========== new Dashboard ===========
+// Router.route(('/dashboard/view?id=' + id), function() {
+//   this.render('newDash');
+// });

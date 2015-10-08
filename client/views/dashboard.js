@@ -23,3 +23,9 @@ Template.dashboard.events({
     Router.go('/profile/edit');
   }
 });
+
+Template.dashboard.helpers({
+  allTasks : function(){
+    return Tasks.find();
+  }
+});
