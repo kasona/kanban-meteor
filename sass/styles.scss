@@ -28,16 +28,30 @@ form {
   .box {
   text-align: center;
   border: 5px solid #000;
-  display: inline-block;
-  width: 300px;
+  display: table-cell;
+  width: 25%;
+  padding: 10px;
   padding-bottom: 50px;
   margin: 10px 10px;
   box-sizing: border-box
 
   }
+
+}
+// Add new task button
+#addNew {
+  color: #000;
+  background-color: lightblue;
+  border: 3px solid #000;
+  padding: 5px;
+  font-size: 15px;
 }
 
 // ============== Create Task ======================
+
+body {
+  margin: 40px 100px;
+}
 
 h1 {
   color: teal;
@@ -71,10 +85,11 @@ h1 {
       padding-bottom: 40px;
   }
 }
-
+//create butt
 #create {
   color: #000;
   margin-top: 0;
+  float: initial right;
   background-color: lightblue;
   border: 3px solid  #000;
 }

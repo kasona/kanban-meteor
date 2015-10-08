@@ -8,13 +8,9 @@ Template.login.created = function() {
 Template.login.destroyed = function() {
 };
 
-// Template.login.events({
-//   'submit form' : function(event) {
-//     event.preventDefault();
-//     var email = event.target.loginEmail.value;
-//     var password = event.target.loginPassword.value;
-//     // Meteor.loginWithPassword(email, password, function() {
-//     //   Router.go('/dashboard');
-//     // });
-//   }
-// });
+Template.dashboard.events({
+  'click #addNew' : function(event, template) {
+    event.preventDefault();
+    Router.go('/tasks/new');
+  }
+});
