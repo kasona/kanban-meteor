@@ -23,7 +23,10 @@
         To Do..
         <hr style="background:#000; border:0; height:3px" />
         <p>
-          {{allTasks}}
+          {{#each allTasks}}
+            {{> taskItem}}
+          {{/each}}
+
         </p>
          <a href="#" class="button round" id="addNew">Add new task!</a>
       </div>
