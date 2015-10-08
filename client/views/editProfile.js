@@ -8,9 +8,10 @@ Template.login.created = function() {
 Template.login.destroyed = function() {
 };
 
-Template.login.events({
-  'click #login-buttons-password' : function(event, template) {
+// Logout button
+Template.editProfile.events({
+  'click #userProfile' : function(event, template) {
     event.preventDefault();
-    Router.go('/dashboard');
+    Router.go('/login');
   }
 });
