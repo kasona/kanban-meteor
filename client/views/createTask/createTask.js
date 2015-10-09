@@ -11,18 +11,23 @@ Template.createTask.destroyed = function() {
 // Should save information from form and put that into Task container
 Template.createTask.events({
   'click #create' : function(event, template) {
+     event.preventDefault();
     //Get values of title and description
     var titleValue = template.find('#title').value;
     var descriptionValue = template.find('#description').value;
     // save #title and #description to task
     Tasks.insert({
       title: titleValue,
-      description: descriptionValue
+      description: descriptionValue,
+      // default status 1 ( to-do )
+      status : 1
     });
+    console.log('banana');
     // get id to use for route
-    var id = this._id;
+    // var id = this._id;
     //redirect user to dashboard
-    Router.go('/dashboard/view?id=' + id);
+    // Router.go('/dashboard/view?id=' + id);
+    Router.go('/');
   }
 });
 

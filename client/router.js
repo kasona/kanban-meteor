@@ -5,15 +5,14 @@ Router.configure({
 
 // ============= Home Page ================
 Router.route('/', function () {
-  this.render('login', {
+  this.render('dashboard', {
   });
 });
 
 // ============ Dashboard ================
-Router.route('/dashboard', function() {
-  //
-  this.render('dashboard');
-});
+// Router.route('/dashboard', function() {
+//   this.render('dashboard');
+// });
 
 // ============ Register =================
 Router.route('/register', function() {

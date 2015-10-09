@@ -1,7 +1,9 @@
-<template name="taskItem">
-<div class ="task-box">
-  Title: {{title}} <br>
-  Description: {{description}}
+<!-- // In Progress Task Container -->
+
+<template name="inProgressItem">
+  <div class ="task-box" status="newTask">
+    Title: {{title}} <br>
+    Description: {{description}}
   <br>
   <div class="buttons">
     <a href="#" class="button round" id="left">Left</a>

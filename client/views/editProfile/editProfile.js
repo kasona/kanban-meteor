@@ -1,17 +1,17 @@
 //client/views/home.js
-Template.login.rendered = function() {
+Template.editProfile.rendered = function() {
 };
 
-Template.login.created = function() {
+Template.editProfile.created = function() {
 };
 
-Template.login.destroyed = function() {
+Template.editProfile.destroyed = function() {
 };
 
 // Logout button
 Template.editProfile.events({
   'click #userProfile' : function(event, template) {
     event.preventDefault();
-    Router.go('/login');
+    Router.go('/');
   }
 });

@@ -4,18 +4,11 @@
   <a href="localhost:3000/">
   </a>
     <h1>
-      Welcome <a href="#" id="userProfile">
-        {{userName}} username
-      </a>
+      Welcome
     </h1>
-  <p>In here we need...
-    <li>
-      Add new task should redirect user to /task/new
-    </li>
-    <li>
-      Boxes need to be a fixed size
-    </li>
-  </p>
+    {{> loginButtons}}
+     <a href="#" class="button round" id="addNew">Add new task!</a>
+
 <div class="row">
 
     <div class="large-4 columns">
@@ -23,23 +16,22 @@
         To Do..
         <hr style="background:#000; border:0; height:3px" />
         <p>
-          {{#each allTasks}}
-            {{> taskItem}}
+          {{#each allToDoItems}}
+            {{> toDoItem}}
           {{/each}}
 
         </p>
-         <a href="#" class="button round" id="addNew">Add new task!</a>
       </div>
     </div>
 
-    <div class="large-4 columns">
+<div class="large-4 columns">
       <div id="progress" class="box">
         In Progress
         <hr style="background:#000; border:0; height:3px" />
         <p>
-          <li>
-            Tasks
-          </li>
+          {{#each allInProgress}}
+            {{> inProgressItem}}
+          {{/each}}
         </p>
       </div>
     </div>
@@ -49,9 +41,9 @@
         Done!
         <hr style="background:#000; border:0; height:3px" />
         <p>
-          <li>
-            Tasks
-          </li>
+          {{#each allDone}}
+            {{> doneItem}}
+          {{/each}}
         </p>
       </div>
     </div>

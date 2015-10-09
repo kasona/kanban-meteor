@@ -28,6 +28,7 @@ h1 {
   #userProfile{
 
   color: #008080;
+  width: auto;
   font-family: $font;
     &:hover{
       color: lime;
@@ -56,6 +57,22 @@ h1 {
   background-color: lightblue;
   border: 3px solid #000;
   padding: 5px;
+  display: inline-block;
+  float:left;
+  margin-top: 0;
+  font-size: 15px;
+  &:hover{
+    border: dotted  pink;
+  }
+}
+#logout {
+  color: #000;
+  background-color: lightblue;
+  border: 3px solid #000;
+  padding: 5px;
+  display: inline-block;
+
+  margin-top: 0;
   font-size: 15px;
   &:hover{
     border: dotted  pink;
@@ -75,6 +92,7 @@ h1 {
   margin-bottom: 0;
   font-size: 40px;
   padding-left: 70px;
+  padding-bottom: 20px;
   display: inline-block;
 }
 
@@ -83,7 +101,8 @@ h1 {
   background-color: lightblue;
   display: inline-block;
   font-size: 15px;
-  float: right;
+  margin-top:0;
+  text-align: right;
   padding: 10px;
   border: 3px solid #000;
 }
@@ -105,6 +124,7 @@ h1 {
 #create {
   color: #000;
   margin-top: 0;
+  display: inline-block;
   float: initial right;
   background-color: lightblue;
   border: 3px solid  #000;
@@ -128,7 +148,7 @@ input{
 .task-box {
   border: 2px dashed lightgreen;
   text-align: left;
-  margin: 30px;
+  margin: 10px 30px;
   padding: 5px;
 }
 
@@ -175,4 +195,11 @@ input{
     background-color: lavender
   }
 }
+}
+
+// ========= toDoItems ==============
+
+h3 {
+  font-size: 15px;
+  font-family: $font;
 }
