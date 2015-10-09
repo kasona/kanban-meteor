@@ -23,10 +23,6 @@ Template.createTask.events({
       status : 1
     });
     console.log('banana');
-    // get id to use for route
-    // var id = this._id;
-    //redirect user to dashboard
-    // Router.go('/dashboard/view?id=' + id);
     Router.go('/');
   }
 });

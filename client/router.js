@@ -28,8 +28,3 @@ Router.route('/profile/edit', function() {
 Router.route('/tasks/new', function() {
   this.render('createTask');
 });
-
-// // =========== new Dashboard ===========
-// Router.route(('/dashboard/view?id=' + id), function() {
-//   this.render('newDash');
-// });

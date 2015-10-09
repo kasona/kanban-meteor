@@ -1,16 +1,18 @@
 <!-- Dashboard  -->
 
 <template name="dashboard">
-  <a href="localhost:3000/">
-  </a>
     <h1>
+    <a href="#" class="button round" id="addNew">Add new task!</a>
+      <a href="#" class="username">
       Welcome
-    </h1>
-    <div id="login">
-      {{> loginButtons}}
-    </div>
+        {{currentUser.username}}
+        <p> * click 'Welcome' to change username * </p>
+      </a>
+      <div id="login">
+        {{> loginButtons}}
+      </div>
 
-     <a href="#" class="button round" id="addNew">Add new task!</a>
+    </h1>
 
 <div class="row">
 

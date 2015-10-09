@@ -24,7 +24,7 @@ Template.dashboard.events({
   }
 });
 
-// ================ Left Button=================
+// ================ Left Button =================
 Template.dashboard.events({
   'click #left' : function(event, template) {
     Tasks.update(this._id, {$inc: {status: -1}});
@@ -63,5 +63,21 @@ Template.dashboard.events({
         event.preventDefault();
         Meteor.logout();
         Router.go('/');
+    }
+});
+
+// ============== username ===================
+
+Template.dashboard.helpers({
+  'username' : function(){
+    return Tasks.find({username});
+  }
+});
+
+
+Template.dashboard.events({
+    'click .username': function(event){
+        event.preventDefault();;
+        Router.go('/profile/edit');
     }
 });

@@ -10,6 +10,7 @@ body {
   font-family: $font;
   text-align:center;
 }
+
 h2 {
   text-align:center;
   color: #008080;
@@ -22,8 +23,9 @@ form {
   padding: 50px;
 }
 
-// ============ Dashboard  =====================
+// ============== Dashboard  ==================
 
+// Welcome
 h1 {
   #userProfile{
 
@@ -34,9 +36,13 @@ h1 {
       color: lime;
     }
   }
+  p{
+    color: #000;
+  }
 }
 
 .row {
+margin-top: 5px;
 
   .box {
   text-align: center;
@@ -47,10 +53,10 @@ h1 {
   padding-bottom: 50px;
   margin: 10px 10px;
   box-sizing: border-box
-
   }
 
 }
+
 // Add new task button
 #addNew {
   font-family: $font;
@@ -69,8 +75,11 @@ h1 {
 
 #login {
   display: inline-block;
-   position: absolute;
-   right: 100px;
+  position: absolute;
+  right: 100px;
+  font-size: 16px;
+  margin-top: 0;
+
 }
 
 // ============== Create Task ======================
