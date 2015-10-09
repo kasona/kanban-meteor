@@ -49,13 +49,13 @@ Template.dashboard.helpers({
     return Tasks.find({ status : 3 });
   }
 });
+// ============ Remove Button ==============
 
-// Template.dashboard.events({
-//   'click #remove' : function(event, template) {
-//     DESTROY ME
-//     event.preventDefault();
-//   }
-// });
+Template.dashboard.events({
+  'click #remove' : function(event, template) {
+    Tasks.remove(this._id);
+  }
+});
 
 // ================ Logout =================
 Template.dashboard.events({
