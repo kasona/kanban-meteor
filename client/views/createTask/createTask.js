@@ -15,15 +15,18 @@ Template.createTask.events({
     //Get values of title and description
     var titleValue = template.find('#title').value;
     var descriptionValue = template.find('#description').value;
+    var authorValue = false;
+    // var authorValue = template.find('#author').value;
     // save #title and #description to task
     Tasks.insert({
       title: titleValue,
       description: descriptionValue,
+      author: authorValue,
       // default status 1 ( to-do )
       status : 1
     });
-    console.log('banana');
-    Router.go('/');
+
+    Router.go('/dashboard');
   }
 });
 

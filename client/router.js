@@ -5,14 +5,19 @@ Router.configure({
 
 // ============= Home Page ================
 Router.route('/', function () {
-  this.render('dashboard', {
+  this.render('home', {
   });
 });
 
+// ============ Sign Up =================
+Router.route('/signup', function() {
+  this.render('signup');
+});
+
 // ============ Dashboard ================
-// Router.route('/dashboard', function() {
-//   this.render('dashboard');
-// });
+Router.route('/dashboard', function() {
+  this.render('dashboard');
+});
 
 // ============ Register =================
 Router.route('/register', function() {

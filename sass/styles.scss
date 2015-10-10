@@ -1,10 +1,11 @@
 @import ".meteor/local/build/programs/server/assets/packages/matthew_foundation5-sass/foundation";
+
 @import url(https://fonts.googleapis.com/css?family=Quicksand|Architects+Daughter);
 
 //variables
 $font:  Architects Daughter;
 
-// ============ Home  ======================
+// =========== application layout===============
 body {
   background-color: lighten(grey, 20%);
   font-family: $font;
@@ -17,14 +18,22 @@ h2 {
   font-family: $font;
 }
 h6 {
-  font-size: 16px;
+  font-size: 10px;
+  font-family: $font;
 }
 form {
   padding: 50px;
 }
+// ============ Home  ======================
+
+.login-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin: 100px 0;
+  padding: 40px 20px 0 20px;
+}
 
 // ============== Dashboard  ==================
-
 // Welcome
 h1 {
   #userProfile{
@@ -72,16 +81,6 @@ margin-top: 5px;
     border: dotted  pink;
   }
 }
-
-#login {
-  display: inline-block;
-  position: absolute;
-  right: 100px;
-  font-size: 16px;
-  margin-top: 0;
-
-}
-
 
 
 // ============== Create Task ======================
