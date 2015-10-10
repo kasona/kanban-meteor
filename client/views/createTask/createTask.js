@@ -27,5 +27,11 @@ Template.createTask.events({
   }
 });
 
-
 //Logout button should take user back to login page
+
+Template.createTask.events({
+  'click #logout' : function(event) {
+    event.preventDefault();
+    Router.go('/')
+  }
+});

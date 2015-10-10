@@ -24,6 +24,7 @@ Template.editProfile.events({
       // var changeEmailValue = template.find('#changeEmail').value;
      // Accounts.setUsername(Meteor.userId(), usernameValue);
      Meteor.users.update(Meteor.user()._id, {$set: {username : usernameValue}});
+     // Meteor.users.update(Meteor.user()._id, {$set: {email : changeEmailValue}}
     Router.go('/');
     // console.log('pears', usernameValue);
     // console.log('banana', Meteor.userId());
