@@ -15,8 +15,6 @@ Template.home.events({
       //Get values of title and description
       var usernameValue = template.find('#username').value;
       var passwordValue = template.find('#password').value;
-        console.log('pear', 'apples', usernameValue);
-        console.log('banana', passwordValue);
       Meteor.loginWithPassword(usernameValue, passwordValue, function(err){
       if (err){
         console.log('err', err);

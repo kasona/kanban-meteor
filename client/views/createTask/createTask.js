@@ -15,13 +15,12 @@ Template.createTask.events({
     //Get values of title and description
     var titleValue = template.find('#title').value;
     var descriptionValue = template.find('#description').value;
-    var authorValue = false;
-    // var authorValue = template.find('#author').value;
+    var dueValue = template.find('#due').value;
     // save #title and #description to task
     Tasks.insert({
       title: titleValue,
       description: descriptionValue,
-      author: authorValue,
+      due: dueValue,
       // default status 1 ( to-do )
       status : 1
     });
